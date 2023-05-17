@@ -45,7 +45,7 @@ Get-Process
                 # If the service is not running, restart the system
                 $svcStatus = Get-Service -DisplayName "TRIGONE Remote System Monitor Service" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Status
                 if ($svcStatus -ne "Running") {
-                    Restart-Computer -Force -ErrorAction SilentlyContinue
+              #      Restart-Computer -Force -ErrorAction SilentlyContinue
                 }
                 break
             }
