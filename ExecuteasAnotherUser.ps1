@@ -1,6 +1,6 @@
-$UserName = "amos"
-$DomainName = "DC"
-$NTLMHash = "Password1234"
+$UserName = "Sundar"
+$DomainName = "ACME"
+$NTLMHash = "Password12345"
 # NTLM Hash 8c3efc486704d2ee71eebe71af14d86c
 $SecureNTLMHash = ConvertTo-SecureString -String $NTLMHash -AsPlainText -Force
 $Credential = New-Object System.Management.Automation.PSCredential("$DomainName\$UserName", $SecureNTLMHash)
