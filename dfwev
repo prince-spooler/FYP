@@ -1,0 +1,341 @@
+
+
+USER INFORMATION
+
+----------------
+
+
+
+User Name   SID                                            
+
+=========== ===============================================
+
+acme\sundar S-1-5-21-2805447627-3462665695-1070208865-30109
+
+
+
+
+
+GROUP INFORMATION
+
+-----------------
+
+
+
+Group Name                                      Type             SID                                             Attributes                                                     
+
+=============================================== ================ =============================================== ===============================================================
+
+Everyone                                        Well-known group S-1-1-0                                         Mandatory group, Enabled by default, Enabled group             
+
+BUILTIN\Administrators                          Alias            S-1-5-32-544                                    Mandatory group, Enabled by default, Enabled group, Group owner
+
+BUILTIN\Users                                   Alias            S-1-5-32-545                                    Mandatory group, Enabled by default, Enabled group             
+
+NT AUTHORITY\NETWORK                            Well-known group S-1-5-2                                         Mandatory group, Enabled by default, Enabled group             
+
+NT AUTHORITY\Authenticated Users                Well-known group S-1-5-11                                        Mandatory group, Enabled by default, Enabled group             
+
+NT AUTHORITY\This Organization                  Well-known group S-1-5-15                                        Mandatory group, Enabled by default, Enabled group             
+
+ACME\Information Security Management Department Group            S-1-5-21-2805447627-3462665695-1070208865-30104 Mandatory group, Enabled by default, Enabled group             
+
+Authentication authority asserted identity      Well-known group S-1-18-1                                        Mandatory group, Enabled by default, Enabled group             
+
+Mandatory Label\High Mandatory Level            Label            S-1-16-12288                                                                                                   
+
+
+
+
+
+PRIVILEGES INFORMATION
+
+----------------------
+
+
+
+Privilege Name                            Description                                                        State  
+
+========================================= ================================================================== =======
+
+SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Enabled
+
+SeSecurityPrivilege                       Manage auditing and security log                                   Enabled
+
+SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Enabled
+
+SeLoadDriverPrivilege                     Load and unload device drivers                                     Enabled
+
+SeSystemProfilePrivilege                  Profile system performance                                         Enabled
+
+SeSystemtimePrivilege                     Change the system time                                             Enabled
+
+SeProfileSingleProcessPrivilege           Profile single process                                             Enabled
+
+SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled
+
+SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled
+
+SeBackupPrivilege                         Back up files and directories                                      Enabled
+
+SeRestorePrivilege                        Restore files and directories                                      Enabled
+
+SeShutdownPrivilege                       Shut down the system                                               Enabled
+
+SeDebugPrivilege                          Debug programs                                                     Enabled
+
+SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Enabled
+
+SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled
+
+SeRemoteShutdownPrivilege                 Force shutdown from a remote system                                Enabled
+
+SeUndockPrivilege                         Remove computer from docking station                               Enabled
+
+SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Enabled
+
+SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled
+
+SeCreateGlobalPrivilege                   Create global objects                                              Enabled
+
+SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled
+
+SeTimeZonePrivilege                       Change the time zone                                               Enabled
+
+SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
+
+SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
+
+
+
+
+
+USER CLAIMS INFORMATION
+
+-----------------------
+
+
+
+User claims unknown.
+
+
+
+Kerberos support for Dynamic Access Control on this device has been disabled.
+
+
+
+
+
+AccountExpirationDate                : 
+
+accountExpires                       : 9223372036854775807
+
+AccountLockoutTime                   : 
+
+AccountNotDelegated                  : False
+
+AllowReversiblePasswordEncryption    : False
+
+AuthenticationPolicy                 : {}
+
+AuthenticationPolicySilo             : {}
+
+BadLogonCount                        : 0
+
+badPasswordTime                      : 133301000628034549
+
+badPwdCount                          : 0
+
+CannotChangePassword                 : False
+
+CanonicalName                        : ACME.LOCAL/Users/Sundar
+
+Certificates                         : {}
+
+City                                 : 
+
+CN                                   : Sundar
+
+codePage                             : 0
+
+Company                              : 
+
+CompoundIdentitySupported            : {}
+
+Country                              : 
+
+countryCode                          : 0
+
+Created                              : 5/16/2023 5:32:01 PM
+
+createTimeStamp                      : 5/16/2023 5:32:01 PM
+
+Deleted                              : 
+
+Department                           : 
+
+Description                          : 
+
+DisplayName                          : 
+
+DistinguishedName                    : CN=Sundar,CN=Users,DC=ACME,DC=LOCAL
+
+Division                             : 
+
+DoesNotRequirePreAuth                : False
+
+dSCorePropagationData                : {6/1/2023 7:04:45 AM, 12/31/1600 4:00:01 PM}
+
+EmailAddress                         : 
+
+EmployeeID                           : 
+
+EmployeeNumber                       : 
+
+Enabled                              : True
+
+Fax                                  : 
+
+GivenName                            : 
+
+HomeDirectory                        : 
+
+HomedirRequired                      : False
+
+HomeDrive                            : 
+
+HomePage                             : 
+
+HomePhone                            : 
+
+Initials                             : 
+
+instanceType                         : 4
+
+isDeleted                            : 
+
+KerberosEncryptionType               : {}
+
+LastBadPasswordAttempt               : 6/1/2023 6:34:22 AM
+
+LastKnownParent                      : 
+
+lastLogoff                           : 0
+
+lastLogon                            : 133301024935329158
+
+LastLogonDate                        : 5/29/2023 10:55:00 PM
+
+lastLogonTimestamp                   : 133298997005916856
+
+LockedOut                            : False
+
+logonCount                           : 221
+
+LogonWorkstations                    : 
+
+managedObjects                       : {OU=Dc replicatiory rights,DC=ACME,DC=LOCAL}
+
+Manager                              : 
+
+MemberOf                             : {CN=Information Security Management Department,CN=Users,DC=ACME,DC=LOCAL}
+
+MNSLogonAccount                      : False
+
+MobilePhone                          : 
+
+Modified                             : 5/29/2023 10:55:00 PM
+
+modifyTimeStamp                      : 5/29/2023 10:55:00 PM
+
+msDS-User-Account-Control-Computed   : 0
+
+Name                                 : Sundar
+
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity
+
+ObjectCategory                       : CN=Person,CN=Schema,CN=Configuration,DC=ACME,DC=LOCAL
+
+ObjectClass                          : user
+
+ObjectGUID                           : a1eec2ff-72ac-4054-90e4-ad83ce465087
+
+objectSid                            : S-1-5-21-2805447627-3462665695-1070208865-30109
+
+Office                               : 
+
+OfficePhone                          : 
+
+Organization                         : 
+
+OtherName                            : 
+
+PasswordExpired                      : False
+
+PasswordLastSet                      : 5/16/2023 5:32:01 PM
+
+PasswordNeverExpires                 : False
+
+PasswordNotRequired                  : False
+
+POBox                                : 
+
+PostalCode                           : 
+
+PrimaryGroup                         : CN=Domain Users,CN=Users,DC=ACME,DC=LOCAL
+
+primaryGroupID                       : 513
+
+PrincipalsAllowedToDelegateToAccount : {}
+
+ProfilePath                          : 
+
+ProtectedFromAccidentalDeletion      : False
+
+pwdLastSet                           : 133287571214266606
+
+SamAccountName                       : Sundar
+
+sAMAccountType                       : 805306368
+
+ScriptPath                           : 
+
+sDRightsEffective                    : 0
+
+ServicePrincipalNames                : {}
+
+SID                                  : S-1-5-21-2805447627-3462665695-1070208865-30109
+
+SIDHistory                           : {}
+
+SmartcardLogonRequired               : False
+
+State                                : 
+
+StreetAddress                        : 
+
+Surname                              : 
+
+Title                                : 
+
+TrustedForDelegation                 : False
+
+TrustedToAuthForDelegation           : False
+
+UseDESKeyOnly                        : False
+
+userAccountControl                   : 512
+
+userCertificate                      : {}
+
+UserPrincipalName                    : 
+
+uSNChanged                           : 111031
+
+uSNCreated                           : 85232
+
+whenChanged                          : 5/29/2023 10:55:00 PM
+
+whenCreated                          : 5/16/2023 5:32:01 PM
+
+
