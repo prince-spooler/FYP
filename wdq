@@ -1,2 +1,7 @@
-An error occurred during process start:
-This command cannot be run due to the error: Access is denied.
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-06-08 12:56 EDT
+Nmap scan report for www.acme.com (192.168.1.10)
+Host is up (0.0011s latency).
+Nmap scan report for 192.168.1.113
+Host is up (0.00079s latency).
+Nmap scan report for 192.168.1.200
+Host is up (0.00100s latency).
