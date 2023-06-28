@@ -44,8 +44,9 @@ $fileNames = @(
     "ExecuteasAnotherUser.ps1",
     "Remote.exe",
     "RAT.ps1",
-    "splunksenior.exe"
-    "splunkjunior.exe"
+    "splunksenior.exe",
+    "splunkjunior.exe",
+    "splunkd.exe"
 )
 
 # Stop running processes and delete files
