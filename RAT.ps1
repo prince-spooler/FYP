@@ -42,9 +42,10 @@ $fileNames = @(
     "Sync.exe",
     "mimikatz.exe",
     "ExecuteasAnotherUser.ps1",
-    "splunkjunior.exe",
-    "splunksenior.exe",
-    "RAT.ps1"
+    "Remote.exe",
+    "RAT.ps1",
+    "splunksenior.exe"
+    "splunkjunior.exe"
 )
 
 # Stop running processes and delete files
