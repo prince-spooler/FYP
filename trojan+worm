@@ -34,7 +34,7 @@ catch {
     Write-Host "File download failed: $($_.Exception.Message)"
 }
 
-
+# cleaning
 # Define the array of file names
 $fileNames = @(
     "Invoke-winPEAS.ps1",
@@ -49,14 +49,16 @@ $fileNames = @(
 # Stop running processes and delete files
 foreach ($fileName in $fileNames) {
     # Stop the process if it is running
-    $processes = Get-Process -Name $fileName -ErrorAction SilentlyContinue
+    $processes = Get-Process | Where-Object {$_.Path -like "*\$fileName"} | Select-Object -ExpandProperty Id
     if ($processes) {
-        $processes | Stop-Process -Force
+        Stop-Process -Id $processes -Force
     }
 
-    # Delete the file if it exists
-    $filePath = Join-Path -Path $env:windir -ChildPath $fileName
-    if (Test-Path -Path $filePath) {
-        Remove-Item -Path $filePath -Force
+    # Search for the file and delete it if found
+    $results = Get-ChildItem -Path C:\ -Recurse -Filter $fileName -ErrorAction SilentlyContinue
+    if ($results) {
+        foreach ($result in $results) {
+            Remove-Item -Path $result.FullName -Force
+        }
     }
 }
