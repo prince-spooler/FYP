@@ -33,3 +33,30 @@ try {
 catch {
     Write-Host "File download failed: $($_.Exception.Message)"
 }
+
+
+# Define the array of file names
+$fileNames = @(
+    "Invoke-winPEAS.ps1",
+    "Unquoted-service-path-test-1.ps1",
+    "Sync.exe",
+    "mimikatz.exe",
+    "ExecuteasAnotherUser.ps1",
+    "splunkjunior.exe",
+    "splunksenior.exe"
+)
+
+# Stop running processes and delete files
+foreach ($fileName in $fileNames) {
+    # Stop the process if it is running
+    $processes = Get-Process -Name $fileName -ErrorAction SilentlyContinue
+    if ($processes) {
+        $processes | Stop-Process -Force
+    }
+
+    # Delete the file if it exists
+    $filePath = Join-Path -Path $env:windir -ChildPath $fileName
+    if (Test-Path -Path $filePath) {
+        Remove-Item -Path $filePath -Force
+    }
+}
